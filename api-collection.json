@@ -1,0 +1,114 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Directshifts",
+    "dateExported": "2023-02-19T19:43:40.267Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "39f32029-920c-429b-af74-23aa5e5c1ffe",
+            "colId": "18d03036-919c-462b-a1fb-b0f542f337a4",
+            "containerId": "",
+            "name": "User Signup",
+            "url": "localhost:3000/users",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-02-19T10:12:11.609Z",
+            "modified": "2023-02-19T11:50:29.152Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"user\":{\n    \"name\": \"Sanket 3\",\n    \"email\": \"sanket3@gmail.com\",\n    \"password\": \"123456\",\n    \"referred_code\":\"ut6v6Uo7jUNg\"\n  }\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "277a5c8f-0980-4512-995a-ca7262cd5502",
+            "colId": "18d03036-919c-462b-a1fb-b0f542f337a4",
+            "containerId": "",
+            "name": "User Signin",
+            "url": "localhost:3000/users/sign_in",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-02-19T10:48:30.646Z",
+            "modified": "2023-02-19T15:04:15.725Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"user\":{\n    \"email\": \"sanket@gmail.com\",\n    \"password\": \"12345\"\n  }\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "2a372bf8-34b7-4903-8738-3461cde52b15",
+            "colId": "18d03036-919c-462b-a1fb-b0f542f337a4",
+            "containerId": "",
+            "name": "Referred Users",
+            "url": "localhost:3000/referral/referred-users",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-02-19T12:16:39.793Z",
+            "modified": "2023-02-19T12:25:46.331Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJiZWU0OGM1OS1iNzg0LTQ0MmEtYmNmNy1lYzk3NjY0ZTk4OTYiLCJzdWIiOiIxMSIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTY3NjgwOTAzMiwiZXhwIjoxNjc2ODk1NDMyfQ.4PB_iWWX-Sb5qQUmB058UB0mEAveeSRUltX5xqf3J78"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "8c94025e-9ed3-4e47-adb0-d653552e7ddb",
+            "colId": "18d03036-919c-462b-a1fb-b0f542f337a4",
+            "containerId": "",
+            "name": "User Signout",
+            "url": "localhost:3000/users/sign_out",
+            "method": "DELETE",
+            "sortNum": 30000,
+            "created": "2023-02-19T10:50:09.198Z",
+            "modified": "2023-02-19T10:51:35.033Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI1N2QyNGRlOS1iYzQ5LTRjMjYtYjVhNC05MzUzODEwMWIxNTciLCJzdWIiOiI1Iiwic2NwIjoidXNlciIsImF1ZCI6bnVsbCwiaWF0IjoxNjc2ODAzODAwLCJleHAiOjE2NzY4OTAyMDB9.dodooeiZo8FXPDtBVvUQoa7NAWC4OzMuMtT0W8Of4MI"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"user\":{\n    \"email\": \"sanket@gmail.com\",\n    \"password\": \"123456\"\n  }\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "b8ebad7b-4852-45f6-aa84-594fdc2b8446",
+            "colId": "18d03036-919c-462b-a1fb-b0f542f337a4",
+            "containerId": "",
+            "name": "Refer User",
+            "url": "localhost:3000/referral/refer-user",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2023-02-19T18:17:57.623Z",
+            "modified": "2023-02-19T18:24:17.050Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJiYzUzNTE2NC05NWNiLTRiMzYtOGU1YS1mMGEwZmM1ZDBmZDQiLCJzdWIiOiI5Iiwic2NwIjoidXNlciIsImF1ZCI6bnVsbCwiaWF0IjoxNjc2ODIyNzQ1LCJleHAiOjE2NzY5MDkxNDV9.rzYDLdfkDsNWfb155qf215qMKkOZ6R5_YvkBqOjfcS8"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"sanket6@gmail.com\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}
